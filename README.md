@@ -1,15 +1,16 @@
 # Mikkeller Event Invitation
 
-
 <img src="https://i.imgur.com/YsiROuX.gif"  width="50%">
 
-
 ## Mission
+
 This is a school assignment in which the programs Web Developer and IP Graphical Production & Form at Yrgo are collaborating.
-Our mission is to create an event invitation in both physical and digital form. 
-We get to choose ourselves for a real company or organisation and create either a fictitious or a recurring event. 
+Our mission is to create an event invitation in both physical and digital form.
+We get to choose ourselves for a real company or organisation and create either a fictitious or a recurring event.
 
 We have decided to go with the microbrewery company Mikkeller and create a beer launching event.
+
+[Preview coming soon...](https://github.com/gusjak)
 
 <details><summary><strong>Project requirements:</strong></b></summary>
 

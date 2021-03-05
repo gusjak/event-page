@@ -1,0 +1,21 @@
+{
+  "name": "parcel-tailwind-test",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/optimizer-cssnano": "^2.0.0-nightly.616",
+    "@parcel/optimizer-htmlnano": "^2.0.0-nightly.616",
+    "@parcel/packager-css": "^2.0.0-nightly.616",
+    "@parcel/packager-html": "^2.0.0-nightly.616",
+    "@parcel/transformer-css": "^2.0.0-nightly.616",
+    "@parcel/transformer-html": "^2.0.0-nightly.616",
+    "@parcel/transformer-postcss": "^2.0.0-nightly.616",
+    "@parcel/transformer-posthtml": "^2.0.0-nightly.616",
+    "autoprefixer": "^10.2.4",
+    "parcel": "^2.0.0-nightly.614",
+    "postcss": "^8.2.7",
+    "tailwindcss": "^2.0.3"
+  }
+}

@@ -10,7 +10,7 @@ We get to choose ourselves for a real company or organisation and create either 
 
 We have decided to go with the microbrewery company Mikkeller and create a beer launching event.
 
-[Preview coming soon...](https://github.com/gusjak)
+[Mikkeller Event Website](https://ipwu-event.netlify.app/)
 
 <details><summary><strong>Project requirements:</strong></b></summary>
 
@@ -31,21 +31,21 @@ We have decided to go with the microbrewery company Mikkeller and create a beer 
 
 By [Insert Name Here](https://github.com/gusjak)
 
-1. [ ] Insert code review comment here.
-2. [ ] Insert code review comment here.
-3. [ ] Insert code review comment here.
-4. [ ] Insert code review comment here.
-5. [ ] Insert code review comment here.
-6. [ ] Insert code review comment here.
-7. [ ] Insert code review comment here.
-8. [ ] Insert code review comment here.
-9. [ ] Insert code review comment here.
-10. [ ] Insert code review comment here.
+1. Insert code review comment here.
+2. Insert code review comment here.
+3. Insert code review comment here.
+4. Insert code review comment here.
+5. Insert code review comment here.
+6. Insert code review comment here.
+7. Insert code review comment here.
+8. Insert code review comment here.
+9. Insert code review comment here.
+10. Insert code review comment here.
 
 ## Creators
 
 - [Jakob Gustafsson](https://github.com/gusjak) (WU)
-- [Matilda Carlsdotter](https://github.com/gusjak) (IP)
+- [Matilda Carlsdotter](https://github.com/gusjak/event-page) (IP)
 
 ## License
 

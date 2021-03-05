@@ -1,3 +1,25 @@
+/* CUSTOM FONTS */
+@font-face {
+  font-family: 'Mikkelwind';
+  src: local('Mikkelwind'), url('/src/fonts/Mikkelwind.woff2');
+}
+
+@font-face {
+  font-family: 'RalewayRegular';
+  src: local('RalewayRegular'), url('/src/fonts/Raleway-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'RalewayMedium';
+  src: local('RalewayMedium'), url('/src/fonts/Raleway-Medium.woff2');
+}
+
+@font-face {
+  font-family: 'RalewayBold';
+  src: local('RalewayBold'), url('/src/fonts/Raleway-Bold.woff2');
+}
+
+/* TAILWIND MAGIC */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

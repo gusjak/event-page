@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Welcome to</title>
   </head>
-  <body class="bg-light-gray">
-    <main class="px-2 md:px-20 flex flex-col h-screen justify-between">
-      <nav class="flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-6 font-text-title text-3xl">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
+  <body class="bg-light-gray font-text-title">
+    <main class="px-2 md:px-16 lg:px-36 flex flex-col h-screen justify-between">
+      <nav class="flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-6 px-2">
+        <div class="flex items-center flex-shrink-0 mr-6">
           <a class="" href="#">
             <img src="./img/logo.svg" width="220" alt="Mikkeller text logo" />
           </a>
         </div>
 
         <!-- Hamburger Menu -->
-        <div class="block md:hidden">
+        <div class="block lg:hidden">
           <button id="nav-toggle" class="flex items-center px-3 py-3 text-softer-black">
-            <svg class="fill-current h-9 w-20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <svg class="fill-current h-6 w-7" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
@@ -29,11 +29,11 @@
 
         <!-- Navigation Links -->
         <div
-          class="w-full h-screen flex-grow md:flex md:items-end md:w-auto md:h-auto hidden bg-pastel-green-light md:bg-light-gray pt-20 md:pt-0"
+          class="w-full h-screen flex-grow lg:flex lg:items-end lg:w-auto lg:h-auto bg-pastel-green-light lg:bg-light-gray pt-20 lg:pt-0 hidden"
           id="nav-content"
         >
-          <ul class="list-reset md:flex justify-end flex-1 items-center">
-            <li class="ml-64 md:ml-0">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center text-3xl">
+            <li class="mr-3">
               <svg class="absolute" width="100" height="20" viewBox="0 0 48 20">
                 <path
                   id="Path_14"
@@ -44,13 +44,13 @@
               </svg>
               <a class="inline-block text-accent-green hover:text-accent-green py-4 px-4" href="#">Sign Up</a>
             </li>
-            <li class="ml-64 md:ml-0">
+            <li class="mr-3">
               <a class="inline-block text-primary-green hover:text-accent-green py-4 px-4" href="#">Event</a>
             </li>
-            <li class="ml-64 md:ml-0">
+            <li class="mr-3">
               <a class="inline-block text-primary-green hover:text-accent-green py-4 px-4" href="#">About</a>
             </li>
-            <li class="ml-64 md:ml-0">
+            <li class="mr-3">
               <a class="inline-block text-primary-green hover:text-accent-green py-4 px-4" href="#">Contact</a>
             </li>
           </ul>
@@ -58,40 +58,45 @@
       </nav>
 
       <!-- Section 1 Grid Wrapper -->
-      <section class="grid grid-cols-1 gap-10 md:gap-16 md:grid-cols-3 py-4 pt-0 md:py-16 md:pt-0">
-        <div
-          style="height: 80vh"
-          class="transition duration-500 bg-pastel-yellow ease-in hover:bg-yellow-400 md:col-span-2 flex justify-center items-center flex-col text-center"
-        >
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <div style="height: 75vh" class="bg-pastel-yellow ease-in md:col-span-2 flex justify-center items-center flex-col text-center">
           <h1 class="text-6xl">Event</h1>
         </div>
-        <div class="grid grid-cols-1 gap-6 md:gap-10">
-          <div style="height: 37.5vh" class="bg-pastel-red flex justify-center items-center flex-col text-center"><h1 class="text-4xl">Eat</h1></div>
-          <div style="height: 37.5vh" class="bg-pastel-blue-light flex justify-center items-center flex-col text-center"><h1 class="text-4xl">Music</h1></div>
+        <div class="grid grid-cols-1 gap-16">
+          <div style="height: 32.5vh" class="bg-pastel-red flex justify-center items-center flex-col text-center"><h1 class="text-4xl">Eat</h1></div>
+          <div style="height: 32vh" class="bg-pastel-blue-light flex justify-center items-center flex-col text-center">
+            <h1 class="text-4xl">Music</h1>
+          </div>
         </div>
       </section>
 
       <!-- Section 2 Grid Wrapper -->
-      <section class="grid grid-cols-1 md:grid-cols-2 md:grid-flow-row py-4 pt-0 md:py-16 md:pt-0">
-        <div style="height: 80vh" class="bg-pastel-blue-light flex justify-center items-center flex-col text-center"><h1 class="text-4xl">Beer Can</h1></div>
-        <div style="height: 80vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
+      <section class="grid grid-cols-1 lg:grid-cols-2 py-16 lg:gap-16">
+        <div style="height: 75vh" class="bg-pastel-blue-light flex justify-center items-center flex-col text-center">
+          <h1 class="text-4xl">Beer Can</h1>
+        </div>
+        <div style="height: 75vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
           <h1 class="text-4xl">Illustration</h1>
         </div>
       </section>
 
       <!-- Section 3 Grid Wrapper -->
-      <section class="grid grid-cols-1 gap-10 md:gap-16 md:grid-cols-3 py-4 pt-0 md:py-16 md:pt-0">
-        <div class="grid grid-cols-1 gap-6 md:gap-10">
-          <div style="height: 40vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center"><h1 class="text-4xl">Sign-Up</h1></div>
-          <div style="height: 40vh" class="bg-pastel-red flex justify-center items-center flex-col text-center"><h1 class="text-4xl">About Us</h1></div>
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 pb-16">
+        <div class="grid grid-cols-1 gap-16">
+          <div style="height: 32.5vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
+            <h1 class="text-4xl">Sign-Up</h1>
+          </div>
+          <div style="height: 32vh" class="bg-pastel-red flex justify-center items-center flex-col text-center">
+            <h1 class="text-4xl">About Us</h1>
+          </div>
         </div>
-        <div style="height: 85vh" class="bg-pastel-green-dark md:col-span-2 flex justify-center items-center flex-col text-center">
+        <div style="height: 75vh" class="bg-pastel-green-dark md:col-span-2 flex justify-center items-center flex-col text-center">
           <h1 class="text-6xl">Gift</h1>
         </div>
       </section>
 
       <!-- Footer Section -->
-      <footer class="bg-pastel-green-light mt-5 py-20 flex justify-center items-center flex-col text-center">
+      <footer class="bg-pastel-green-light py-20 flex justify-center items-center flex-col text-center">
         <h1 class="text-6xl">Footer</h1>
       </footer>
     </main>

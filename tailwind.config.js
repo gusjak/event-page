@@ -22,6 +22,10 @@ module.exports = {
         'text-medium': 'RalewayMedium',
         'text-bold': 'RalewayBold',
       },
+      screens: {
+        lg: '1100px',
+        // => @media (min-width: 1100px) { ... }
+      },
     },
   },
   variants: {},

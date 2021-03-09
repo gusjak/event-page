@@ -13,6 +13,7 @@ module.exports = {
         'pastel-blue-middle': '#81C3E8',
         'pastel-blue-dark': '#2C7BE5',
         'pastel-pink': '#FFD0DB',
+        'pastel-pink-beer': '#FFD3DE',
         'pastel-green-dark': '#70AE8C',
         'pastel-green-light': '#EEFBEF',
       },
@@ -25,6 +26,9 @@ module.exports = {
       screens: {
         lg: '1100px',
         // => @media (min-width: 1100px) { ... }
+      },
+      backgroundImage: {
+        'henry-sally-dance': "url('../img/sally-henry-dance.svg')",
       },
     },
   },

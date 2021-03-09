@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Welcome to</title>
   </head>
-  <body class="bg-light-gray font-text-title">
+  <body class="bg-light-gray">
     <main class="px-2 md:px-16 lg:px-36 flex flex-col h-screen justify-between">
-      <nav class="flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-6 px-3">
+      <nav class="flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-6 px-3 font-text-title">
         <div class="flex items-center flex-shrink-0 mr-6">
           <a class="" href="#">
             <img src="./img/logo.svg" width="220" alt="Mikkeller text logo" />
@@ -68,9 +68,12 @@
       </nav>
 
       <!-- Section 1 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-3 gap-16">
-        <div style="height: 75vh" class="bg-pastel-yellow ease-in md:col-span-2 flex justify-center items-center flex-col text-center">
-          <h1 class="text-6xl">Event</h1>
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-6 font-text-title">
+        <div
+          style="height: 75vh"
+          class="bg-henry-sally-dance bg-pastel-yellow hover:bg-pastel-green-dark bg-center bg-contain bg-no-repeat md:col-span-2 flex justify-items-start flex-col text-center"
+        >
+          <h1 class="text-6xl mt-8">Event</h1>
         </div>
         <div class="grid grid-cols-1 gap-16 md:ml-16 lg:ml-0">
           <div style="height: 33vh" class="bg-pastel-red flex justify-center items-center flex-col text-center"><h1 class="text-4xl">Eat</h1></div>
@@ -81,17 +84,19 @@
       </section>
 
       <!-- Section 2 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-2 py-16 lg:gap-16">
-        <div style="height: 75vh" class="bg-pastel-blue-light flex justify-center items-center flex-col text-center">
-          <h1 class="text-4xl">Beer Can</h1>
-        </div>
-        <div style="height: 75vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
-          <h1 class="text-4xl">Illustration</h1>
-        </div>
+      <section class="grid grid-cols-1 lg:grid-cols-2 py-16 lg:gap-16 font-text-title">
+        <div
+          style="height: 75vh; background-image: url(./img/mikkeller-blue.png)"
+          class="bg-pastel-blue-light bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
+        ></div>
+        <div
+          style="height: 75vh; background-image: url(./img/mikkeller-pink.png)"
+          class="bg-pastel-pink-beer bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
+        ></div>
       </section>
 
       <!-- Section 3 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 pb-16">
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 pb-16 font-text-title">
         <div class="grid grid-cols-1 gap-16 md:ml-16 lg:ml-0">
           <div style="height: 33vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
             <h1 class="text-4xl">Sign-Up</h1>
@@ -100,14 +105,48 @@
             <h1 class="text-4xl">About Us</h1>
           </div>
         </div>
-        <div style="height: 75vh" class="bg-pastel-green-dark md:col-span-2 flex justify-center items-center flex-col text-center">
-          <h1 class="text-6xl">Gift</h1>
-        </div>
+        <div
+          style="height: 75vh; background-image: url(./img/mikkeller-beerglass.png)"
+          class="bg-pastel-green-dark bg-center bg-cover md:col-span-2 flex justify-center items-center flex-col text-center"
+        ></div>
       </section>
 
       <!-- Footer Section -->
-      <footer class="bg-pastel-green-light py-20 flex justify-center items-center flex-col text-center">
-        <h1 class="text-6xl">Footer</h1>
+      <footer class="footer bg-pastel-green-light text-primary-green relative pt-1">
+        <div class="container mx-auto px-6">
+          <div class="sm:flex sm:mt-8">
+            <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+              <div class="flex flex-col">
+                <span class="font-text-title tracking-widest text-3xl mb-2">Contact</span>
+                <span class="my-1 mb-5 tracking-wide">Titel</span>
+                <span class="my-1 tracking-wide">namn@hotmail.com</span>
+                <span class="my-1 tracking-wide">amn@hotmail.com</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-text-title tracking-widest text-3xl mt-4 md:mt-0 mb-2">Office</span>
+                <span class="my-1 tracking-wide">Mikkeller aps</span>
+                <span class="my-1 tracking-wide">Humletorvet 27, 3. sal</span>
+                <span class="my-1 tracking-wide">DK-1799 copenhagen v</span>
+                <span class="my-1 tracking-wide">Denmark</span>
+              </div>
+              <div class="flex flex-col justify-end flex-shrink-0 mt-16">
+                <p>Insert social media links here</p>
+                <a class="" href="#">
+                  <img src="./img/logo.svg" width="220" alt="Mikkeller text logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto px-6">
+          <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
+            <div class="sm:w-2/3 text-center py-6">
+              <p class="text-sm text-softer-black font-bold mb-2">
+                DISCLAIMER: THIS IS A SCHOOL PROJECT AND IS NOT AFFILIATED WITH, FUNDED, OR IN ANY WAY ASSOCIATED WITH MIKKELLER!
+              </p>
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
     <script src="./scripts/index.js"></script>

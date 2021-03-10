@@ -99,7 +99,26 @@
       <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 pb-16 font-text-title">
         <div class="grid grid-cols-1 gap-16 md:ml-16 lg:ml-0">
           <div style="height: 33vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
-            <h1 class="text-4xl">Sign-Up</h1>
+            <form class="flex flex-col w-full text-lg tracking-widest px-8 py-1 mb-6">
+              <label class="">Name</label>
+              <input
+                class="bg-pastel-pink border-white border-2 rounded-full shadow-md px-3 py-1 mb-1 text-center focus:bg-white focus:border-none"
+                name="name"
+                value="Jakob Gustafsson"
+                required
+              />
+              <label class="">Email</label>
+              <input
+                class="bg-pastel-pink border-white border-2 rounded-full shadow-md px-3 py-1 mt-1 focus:bg-white focus:border-none"
+                name="email"
+                required
+              />
+            </form>
+            <button
+              class="bg-pastel-pink hover:bg-white border-white border-2 hover:border-none text-softer-black text-lg tracking-wider px-8 py-2 rounded-full mx-auto w-32 shadow-md"
+            >
+              Sign Up
+            </button>
           </div>
           <div style="height: 33.5vh" class="bg-pastel-red flex justify-center items-center flex-col text-center">
             <h1 class="text-4xl">About Us</h1>

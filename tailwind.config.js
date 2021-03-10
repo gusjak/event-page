@@ -30,6 +30,15 @@ module.exports = {
       backgroundImage: {
         'henry-sally-dance': "url('../img/sally-henry-dance.svg')",
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-2deg)' },
+          '50%': { transform: 'rotate(2deg)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 1.5s ease-in-out infinite',
+      },
     },
   },
   variants: {},

@@ -35,9 +35,14 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-2deg)' },
           '50%': { transform: 'rotate(2deg)' },
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         wiggle: 'wiggle 1.5s ease-in-out infinite',
+        fadeIn: 'fadeIn 3s ease-in forwards',
       },
     },
   },

@@ -69,9 +69,24 @@
 
       <!-- Section 1 Grid Wrapper -->
       <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-6 font-text-title">
-        <div style="height: 75vh" class="bg-pastel-yellow md:col-span-2 flex justify-items-start flex-col text-center">
-          <h1 class="text-6xl mt-8">Event</h1>
-          <div style="height: 75vh" class="bg-henry-sally-dance bg-center bg-contain bg-no-repeat animate-wiggle"></div>
+        <div style="height: 75vh" class="md:col-span-2">
+          <div class="overflow-hidden">
+            <div style="height: 75vh" class="h-full w-full transition duration-300 ease-in transform hover:-translate-y-full">
+              <div style="height: 75vh" class="h-full w-full flex justify-items-start flex-col text-center bg-pastel-yellow">
+                <h1 class="text-6xl mt-8">Event</h1>
+                <div style="height: 75vh" class="bg-henry-sally-dance bg-center bg-contain bg-no-repeat animate-wiggle"></div>
+              </div>
+
+              <div style="height: 75vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-yellow px-2 md:px-10">
+                <h1 class="text-6xl mb-8">Event</h1>
+                <p class="font-text-medium py-3 tracking-wide">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi provident consequatur nam inventore ratione sed ipsa id
+                  numquam aliquam. Accusantium fuga laborum sapiente dolores neque necessitatibus eligendi, dignissimos voluptates distinctio eos laboriosam
+                  expedita voluptas fugit praesentium repellat deleniti sint?
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="grid grid-cols-1 gap-16 md:ml-16 lg:ml-0">
           <div
@@ -138,17 +153,17 @@
           <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
               <div class="flex flex-col">
-                <span class="font-text-title tracking-widest text-3xl mb-2">Contact</span>
-                <span class="my-1 mb-5 tracking-wide">Titel</span>
-                <span class="my-1 tracking-wide">namn@hotmail.com</span>
-                <span class="my-1 tracking-wide">amn@hotmail.com</span>
+                <p class="font-text-title tracking-widest text-3xl mb-2">Contact</p>
+                <p class="font-text-regular my-1 mb-5 tracking-wide">Titel</p>
+                <p class="font-text-regular my-1 tracking-wide">namn@hotmail.com</p>
+                <p class="font-text-regular my-1 tracking-wide">amn@hotmail.com</p>
               </div>
               <div class="flex flex-col">
-                <span class="font-text-title tracking-widest text-3xl mt-4 md:mt-0 mb-2">Office</span>
-                <span class="my-1 tracking-wide">Mikkeller aps</span>
-                <span class="my-1 tracking-wide">Humletorvet 27, 3. sal</span>
-                <span class="my-1 tracking-wide">DK-1799 copenhagen v</span>
-                <span class="my-1 tracking-wide">Denmark</span>
+                <p class="font-text-title tracking-widest text-3xl mt-4 md:mt-0 mb-2">Office</p>
+                <p class="font-text-regular my-1 tracking-wide">Mikkeller aps</p>
+                <p class="font-text-regular my-1 tracking-wide">Humletorvet 27, 3. sal</p>
+                <p class="font-text-regular my-1 tracking-wide">DK-1799 copenhagen v</p>
+                <p class="font-text-regular my-1 tracking-wide">Denmark</p>
               </div>
               <div class="flex flex-col justify-end flex-shrink-0 mt-16">
                 <p>Insert social media links here</p>

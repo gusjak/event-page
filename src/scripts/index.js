@@ -26,7 +26,7 @@ window.onload = () => {
 };
 
 // Card click Event
-document.getElementById('arrow').onclick = () => {
+document.getElementById('show-more').onclick = () => {
   document.getElementById('arrow').classList.toggle('rotate-180');
   document.getElementById('event').classList.toggle('-translate-y-full');
 };

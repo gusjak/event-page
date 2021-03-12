@@ -14,10 +14,11 @@ window.onload = () => {
   try {
     const url_string = window.location.href.toLowerCase();
     const url = new URL(url_string);
-    const name = url.searchParams.get('name');
+    const firstName = url.searchParams.get('firstname');
+    const lastName = url.searchParams.get('lastname');
     const email = url.searchParams.get('email');
 
-    document.getElementById('name').value = name;
+    document.getElementById('name').value = firstName + ' ' + lastName;
     document.getElementById('email').value = email;
   } catch {
     console.log('You dun goofed');
@@ -25,6 +26,7 @@ window.onload = () => {
 };
 
 // Card click Event
-document.getElementById('card').onclick = () => {
+document.getElementById('arrow').onclick = () => {
+  document.getElementById('arrow').classList.toggle('rotate-180');
   document.getElementById('event').classList.toggle('-translate-y-full');
 };

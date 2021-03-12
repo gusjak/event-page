@@ -10,7 +10,7 @@
   </head>
   <body class="bg-light-gray">
     <main class="px-2 md:px-16 lg:px-36 flex flex-col h-screen justify-between">
-      <nav class="flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-6 px-3 font-text-title">
+      <nav class="sticky flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-6 px-3 font-text-title">
         <div class="flex items-center flex-shrink-0 mr-6">
           <a class="" href="#">
             <img src="./img/logo.svg" width="220" alt="Mikkeller text logo" />
@@ -69,9 +69,9 @@
 
       <!-- Section 1 Grid Wrapper -->
       <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-6 font-text-title">
-        <div id="card" style="height: 75vh" class="md:col-span-2">
-          <div class="overflow-hidden">
-            <div id="event" style="height: 75vh" class="h-full w-full transition duration-300 ease-in transform">
+        <div style="height: 75vh" class="md:col-span-2">
+          <div class="relative overflow-hidden">
+            <div id="event" style="height: 75vh" class="h-full w-full transition duration-700 ease-in-out transform">
               <div style="height: 75vh" class="h-full w-full flex justify-items-start flex-col text-center bg-pastel-yellow">
                 <h1 class="text-6xl mt-8">Event</h1>
                 <div style="height: 75vh" class="bg-henry-sally-dance bg-center bg-contain bg-no-repeat transform hover:animate-wiggle"></div>
@@ -86,6 +86,22 @@
                 </p>
               </div>
             </div>
+            <button class="absolute animate-bounce bottom-5 left-1/2 text-center">
+              <svg
+                id="arrow"
+                class="transition duration-700 ease-in-out transform"
+                width="39"
+                height="24"
+                viewBox="0 0 39 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M31.8487 22.7586C33.4823 24.4138 36.1411 24.4138 37.7747 22.7586C39.4084 21.1034 39.4084 18.4097 37.7747 16.7546L22.463 1.24138C20.8294 -0.413793 18.1706 -0.413793 16.537 1.24138L1.22526 16.7546C-0.408419 18.4097 -0.408419 21.1034 1.22526 22.7586C2.85893 24.4138 5.51766 24.4138 7.15134 22.7586L19.5 10.2475L31.8487 22.7586Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
           </div>
         </div>
         <div class="grid grid-cols-1 gap-16 md:ml-16 lg:ml-0">
@@ -119,29 +135,23 @@
       <!-- Section 3 Grid Wrapper -->
       <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 pb-16 font-text-title">
         <div class="grid grid-cols-1 gap-16 md:ml-16 lg:ml-0">
-          <div style="height: 33.5vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
+          <div style="height: 40vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
             <form class="flex flex-col w-full text-lg tracking-widest px-8 pb-2">
-              <label for=name" class="pt-1">Name</label>
-              <input
-                class="bg-pastel-pink border-white border-2 rounded-full shadow-md px-3 mb-3 text-center focus:bg-white focus:border-none"
-                id="name"
-                required
-              />
+              <label for="name" class="pt-1">Name</label>
+              <input class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border" id="name" required />
               <label for="email" class="pt-1">Email</label>
-              <input
-                class="bg-pastel-pink border-white border-2 rounded-full shadow-md px-3 mb-3 text-center focus:bg-white focus:border-none"
-                id="email"
-                required
-              />
+              <input class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border" id="email" required />
             </form>
             <button
-              class="bg-pastel-pink hover:bg-white border-white border-2 hover:border-none text-softer-black text-lg tracking-wider px-8 py-1 rounded-full mx-auto w-32 shadow-md"
+              type="button"
+              style="background-image: url(/src/img/button.svg)"
+              class="text-white text-lg tracking-wider px-8 py-3 rounded-full mx-auto w-32 shadow-md"
               aria-label="Register to event"
             >
               Register
             </button>
           </div>
-          <div style="height: 33vh" class="bg-pastel-red flex justify-center items-center flex-col text-center">
+          <div style="height: 26.5vh" class="bg-pastel-red flex justify-center items-center flex-col text-center">
             <h1 class="text-4xl">About Us</h1>
           </div>
         </div>

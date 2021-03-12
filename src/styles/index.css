@@ -19,6 +19,13 @@
   src: local('RalewayBold'), url('/src/fonts/Raleway-Bold.woff2');
 }
 
+/* CUSTOM CSS */
+.form-border {
+  border: 10px solid;
+  border-image-source: url(/src/img/border.svg);
+  border-image-slice: 15 15;
+}
+
 /* TAILWIND MAGIC */
 @tailwind base;
 @tailwind components;

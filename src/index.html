@@ -69,12 +69,12 @@
 
       <!-- Section 1 Grid Wrapper -->
       <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-6 font-text-title">
-        <div style="height: 75vh" class="md:col-span-2">
+        <div id="card" style="height: 75vh" class="md:col-span-2">
           <div class="overflow-hidden">
-            <div style="height: 75vh" class="h-full w-full transition duration-300 ease-in transform hover:-translate-y-full">
+            <div id="event" style="height: 75vh" class="h-full w-full transition duration-300 ease-in transform">
               <div style="height: 75vh" class="h-full w-full flex justify-items-start flex-col text-center bg-pastel-yellow">
                 <h1 class="text-6xl mt-8">Event</h1>
-                <div style="height: 75vh" class="bg-henry-sally-dance bg-center bg-contain bg-no-repeat animate-wiggle"></div>
+                <div style="height: 75vh" class="bg-henry-sally-dance bg-center bg-contain bg-no-repeat transform hover:animate-wiggle"></div>
               </div>
 
               <div style="height: 75vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-yellow px-2 md:px-10">
@@ -121,13 +121,13 @@
         <div class="grid grid-cols-1 gap-16 md:ml-16 lg:ml-0">
           <div style="height: 33.5vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
             <form class="flex flex-col w-full text-lg tracking-widest px-8 pb-2">
-              <label class="pt-1">Name</label>
+              <label for=name" class="pt-1">Name</label>
               <input
                 class="bg-pastel-pink border-white border-2 rounded-full shadow-md px-3 mb-3 text-center focus:bg-white focus:border-none"
                 id="name"
                 required
               />
-              <label class="pt-1">Email</label>
+              <label for="email" class="pt-1">Email</label>
               <input
                 class="bg-pastel-pink border-white border-2 rounded-full shadow-md px-3 mb-3 text-center focus:bg-white focus:border-none"
                 id="email"
@@ -136,8 +136,9 @@
             </form>
             <button
               class="bg-pastel-pink hover:bg-white border-white border-2 hover:border-none text-softer-black text-lg tracking-wider px-8 py-1 rounded-full mx-auto w-32 shadow-md"
+              aria-label="Register to event"
             >
-              Sign Up
+              Register
             </button>
           </div>
           <div style="height: 33vh" class="bg-pastel-red flex justify-center items-center flex-col text-center">

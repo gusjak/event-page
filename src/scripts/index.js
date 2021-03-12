@@ -1,16 +1,16 @@
 // Hamburger Menu Show/Hide
-document.getElementById('nav-toggle').onclick = function () {
+document.getElementById('nav-toggle').onclick = () => {
   document.getElementById('nav-content').classList.toggle('hidden');
 };
 
 // Document Title Animation
 let i = 0;
-setInterval(function () {
+setInterval(() => {
   document.title = i++ % 2 == 0 ? 'Welcome to' : "Mikkeller's Launch Event 🍻";
 }, 1500);
 
 // Get query parameter values
-window.onload = function () {
+window.onload = () => {
   try {
     const url_string = window.location.href.toLowerCase();
     const url = new URL(url_string);
@@ -22,4 +22,9 @@ window.onload = function () {
   } catch {
     console.log('You dun goofed');
   }
+};
+
+// Card click Event
+document.getElementById('card').onclick = () => {
+  document.getElementById('event').classList.toggle('-translate-y-full');
 };

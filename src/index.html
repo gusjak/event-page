@@ -86,7 +86,7 @@
                 </p>
               </div>
             </div>
-            <button id="show-more" class="absolute animate-bounce bottom-5 left-1/2">
+            <button id="show-more" class="absolute bottom-5 left-1/2 animate-bounce">
               <svg
                 id="arrow"
                 class="transition duration-700 ease-in-out transform"
@@ -138,9 +138,14 @@
           <div style="height: 40vh" class="bg-pastel-pink flex justify-center items-center flex-col text-center">
             <form class="flex flex-col w-full text-lg tracking-widest px-8 pb-2">
               <label for="name" class="pt-1">Name</label>
-              <input class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border" id="name" required />
+              <input
+                id="name"
+                class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border"
+                placeholder="First and last name"
+                required
+              />
               <label for="email" class="pt-1">Email</label>
-              <input class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border" id="email" required />
+              <input id="email" class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border" value="" required />
             </form>
             <button
               type="button"

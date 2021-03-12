@@ -10,23 +10,22 @@ setInterval(() => {
 }, 1500);
 
 // Get query parameter values
-window.onload = () => {
-  try {
-    const url_string = window.location.href.toLowerCase();
-    const url = new URL(url_string);
-    const firstName = url.searchParams.get('firstname');
-    const lastName = url.searchParams.get('lastname');
-    const email = url.searchParams.get('email');
+const url_string = window.location.href.toLowerCase();
+const url = new URL(url_string);
+const firstName = url.searchParams.get('firstname');
+const lastName = url.searchParams.get('lastname');
+const email = url.searchParams.get('email');
 
-    document.getElementById('name').value = firstName + ' ' + lastName;
-    document.getElementById('email').value = email;
-  } catch {
-    console.log('You dun goofed');
-  }
-};
+if (firstName === null && lastName === null && email === null) {
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+} else {
+  document.getElementById('name').value = firstName + ' ' + lastName;
+  document.getElementById('email').value = email;
+}
 
 // Card click Event
 document.getElementById('show-more').onclick = () => {
-  document.getElementById('arrow').classList.toggle('rotate-180');
   document.getElementById('event').classList.toggle('-translate-y-full');
+  document.getElementById('arrow').classList.toggle('rotate-180');
 };

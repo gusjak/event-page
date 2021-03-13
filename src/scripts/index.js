@@ -25,7 +25,7 @@ if (firstName === null && lastName === null && email === null) {
 }
 
 // Card click Event
-document.getElementById('show-more').onclick = () => {
-  document.getElementById('event').classList.toggle('-translate-y-full');
-  document.getElementById('arrow').classList.toggle('rotate-180');
+document.querySelector('.show').onclick = () => {
+  document.querySelector('.event').classList.toggle('-translate-y-full');
+  document.querySelector('.arrow').classList.toggle('rotate-180');
 };

@@ -55,3 +55,8 @@ document.querySelector('.show-about').onclick = () => {
   document.querySelector('.about').classList.toggle('-translate-y-full');
   document.querySelector('.about-arrow').classList.toggle('rotate-180');
 };
+
+// Show Gift Card
+document.querySelector('.show-gift').onclick = () => {
+  document.querySelector('.gift').classList.toggle('-translate-y-full');
+};

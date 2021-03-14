@@ -29,6 +29,8 @@ module.exports = {
       },
       backgroundImage: {
         'henry-sally-dance': "url('../img/sally-henry-dance.svg')",
+        'event-gift': "url('../img/event-gift.svg')",
+        'mikkeller-glass': 'url(../img/mikkeller-beerglass.png)',
       },
       keyframes: {
         wiggle: {
@@ -39,10 +41,20 @@ module.exports = {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
+        jump: {
+          '0%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-50px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
       },
       animation: {
         wiggle: 'wiggle 1.5s ease-in-out infinite',
         fadeIn: 'fadeIn 3s ease-in forwards',
+        jump: 'jump 2s ease-in-out infinite',
+      },
+      inset: {
+        '4/9': '45%',
+        '2/5': '40%',
       },
     },
   },

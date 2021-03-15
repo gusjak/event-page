@@ -63,6 +63,7 @@ module.exports = {
         shake: 'shake 2s infinite',
       },
       inset: {
+        '30p': '30%',
         '47p': '47%',
         '4/9': '45%',
         '2/5': '40%',
@@ -70,9 +71,8 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-      animation: ['hover'],
-    },
+    animation: ['hover, focus'],
+    fill: ['hover, focus'],
   },
   plugins: [],
 };

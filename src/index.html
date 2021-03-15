@@ -68,11 +68,11 @@
       </nav>
 
       <!-- Section 1 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-5 gap-16 mt-6 font-text-title">
+      <section class="grid grid-cols-1 lg:grid-cols-5 gap-16 font-text-title">
         <div style="height: 75vh" class="lg:col-span-3">
           <div class="relative overflow-hidden">
             <div style="height: 75vh" class="event h-full w-full transition duration-700 ease-in-out transform">
-              <div style="height: 75vh" class="h-full w-full flex justify-items-start flex-col text-center bg-pastel-yellow">
+              <div style="height: 75vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-yellow">
                 <h1 class="text-5xl md:text-6xl mt-8">Event</h1>
                 <div style="height: 75vh" class="bg-henry-sally-dance bg-center bg-contain bg-no-repeat transform hover:animate-wiggle"></div>
               </div>
@@ -147,7 +147,7 @@
                   </p>
                 </div>
               </div>
-              <button class="show-music absolute bottom-5 left-47p animate-bounce">
+              <button class="show-music absolute bottom-3 left-47p animate-bounce lg:bottom-5">
                 <svg
                   class="music-arrow transition duration-700 ease-in-out transform"
                   width="35"
@@ -172,13 +172,11 @@
         <div
           style="height: 75vh; background-image: url(./img/mikkeller-blue.png)"
           class="bg-pastel-blue-light bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
-        >
-      </div>
+        ></div>
         <div
           style="height: 75vh; background-image: url(./img/mikkeller-pink.png)"
           class="bg-pastel-pink-beer bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
-        >
-      </div>
+        ></div>
       </section>
 
       <!-- Section 3 Grid Wrapper -->
@@ -204,7 +202,12 @@
                     required
                   />
                   <label for="email">Email</label>
-                  <input id="email" class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border" placeholder="Enter your email address here" required/>
+                  <input
+                    id="email"
+                    class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border"
+                    placeholder="Enter your email address here"
+                    required
+                  />
                 </form>
               </div>
               <div style="height: 75vh" class="h-full w-full flex justify-center items-center text-center flex-col bg-pastel-pink px-10 lg:px-4">
@@ -212,14 +215,23 @@
                 <h1 class="text-4xl">See you there!</h1>
               </div>
             </div>
-            <button
-            type="submit"
-            style="background-image: url(/src/img/button.svg)"
-            class="show-form absolute bottom-10 inset-x-20 text-white text-lg tracking-widest px-8 py-3 rounded-full mx-auto shadow-lg hover:animate-wiggle"
-            aria-label="Register to event"
-          >
-            Sign Up
-          </button>
+            <button class="show-form absolute text-white bottom-7 left-30p md:left-2/5 lg:left-30p lg:bottom-10 hover:text-pastel-pink hover:animate-wiggle">
+              <svg
+                class="fill-current text-primary-green hover:text-pastel-green-dark"
+                width="170"
+                height="56"
+                viewBox="0 0 170 56"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.93 3.31001C24.8 0.290007 53.89 1.27002 59.91 2.49002C109.25 12.48 114.82 -2.00999 153.48 6.75001C178.39 12.39 165.75 43.65 159.46 48.86C153.17 54.07 138.39 53.03 131.59 52.23C95.68 47.96 63.7 60.51 23.7 51.94C18.53 50.83 13.06 51.56 8.52005 46.47C4.61005 42.09 0.160048 29.52 2.27005 20.15C4.60005 9.76 14.04 5.83001 18.93 3.31001Z"
+                />
+                <path
+                  d="M54.24 56.0001C44.42 56.0001 34.24 55.2101 23.49 52.9101C22.29 52.6501 21.03 52.4901 19.82 52.3401C15.72 51.8201 11.47 51.2801 7.78 47.1301C3.68 42.5201 -0.889995 29.6301 1.30001 19.9201C3.56001 9.90006 12.13 5.61005 17.25 3.04005C17.69 2.82005 18.1 2.61006 18.49 2.42006C24.73 -0.789943 54.24 0.320053 60.13 1.51005C85.69 6.68005 99.16 5.28005 112.18 3.93005C123.94 2.70005 135.05 1.55006 153.72 5.77006C161.8 7.60006 166.97 12.3501 168.68 19.5101C171.38 30.8101 164.73 45.8001 160.11 49.6201C153.68 54.9401 139.41 54.1501 131.48 53.2101C115.78 51.3401 101.09 52.6901 85.54 54.1201C75.36 55.0501 65.02 56.0001 54.24 56.0001ZM19.39 4.20006C19 4.40006 18.58 4.61006 18.13 4.83006C13.02 7.39006 5.29001 11.2601 3.24001 20.3601C1.22001 29.3201 5.53001 41.6001 9.27001 45.8001C12.47 49.3901 16.16 49.8601 20.07 50.3501C21.33 50.5101 22.63 50.6801 23.91 50.9501C46.15 55.7201 66.08 53.8901 85.35 52.1201C101.01 50.6801 115.8 49.3301 131.71 51.2201C137.84 51.9501 152.75 53.1001 158.83 48.0801C162.45 45.0801 169.36 31.0001 166.73 19.9701C165.19 13.5101 160.66 9.39007 153.27 7.71007C134.92 3.56007 123.97 4.70005 112.38 5.90005C99.82 7.21005 85.59 8.69006 59.73 3.45006C53.43 2.20006 24.75 1.44006 19.39 4.20006Z"
+                />
+              </svg>
+
+              <h2 class="absolute text-2xl z-50 bottom-2 left-30p">Sign Up</h2>
             </button>
           </div>
         </div>
@@ -229,10 +241,9 @@
               <div style="height: 75vh" class="h-full w-full flex justify-center text-center bg-pastel-green-dark">
                 <h1 class="text-4xl px-10 py-10 lg:px-20 lg:py-20">Bring your coaster invitation and receive a gift!</h1>
               </div>
-              <div style="height: 75vh" class="h-full w-full bg-mikkeller-glass bg-center bg-contain bg-repeatw">
-              </div>
+              <div style="height: 75vh" class="h-full w-full bg-mikkeller-glass bg-center bg-cover"></div>
               <button class="show-gift absolute top-1/2 left-2/5 transform hover:animate-shake">
-                <img src="img/gift.svg" alt="illustration of a wrapped gift">
+                <img src="img/gift.svg" alt="illustration of a wrapped gift" />
               </button>
             </div>
           </div>

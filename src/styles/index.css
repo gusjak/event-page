@@ -21,7 +21,7 @@
 
 /* CUSTOM CSS */
 .form-border {
-  border: 10px solid;
+  border: 15px solid;
   border-image-source: url(/src/img/border.svg);
   border-image-slice: 15 15;
 }

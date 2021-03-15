@@ -63,6 +63,7 @@ module.exports = {
         shake: 'shake 2s infinite',
       },
       inset: {
+        '47p': '47%',
         '4/9': '45%',
         '2/5': '40%',
       },

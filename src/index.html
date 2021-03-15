@@ -10,7 +10,7 @@
   </head>
   <body class="bg-light-gray">
     <main class="px-2 md:px-16 lg:px-36 flex flex-col h-screen justify-between">
-      <nav class="sticky flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-12 font-text-title">
+      <nav class="flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-8 font-text-title">
         <div class="flex items-center flex-shrink-0 mr-6">
           <a class="" href="#">
             <img src="./img/logo.svg" width="180" alt="Mikkeller text logo" />
@@ -68,12 +68,12 @@
       </nav>
 
       <!-- Section 1 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-6 font-text-title">
-        <div style="height: 75vh" class="md:col-span-2">
+      <section class="grid grid-cols-1 lg:grid-cols-5 gap-16 mt-6 font-text-title">
+        <div style="height: 75vh" class="lg:col-span-3">
           <div class="relative overflow-hidden">
             <div style="height: 75vh" class="event h-full w-full transition duration-700 ease-in-out transform">
               <div style="height: 75vh" class="h-full w-full flex justify-items-start flex-col text-center bg-pastel-yellow">
-                <h1 class="text-6xl mt-8">Event</h1>
+                <h1 class="text-5xl md:text-6xl mt-8">Event</h1>
                 <div style="height: 75vh" class="bg-henry-sally-dance bg-center bg-contain bg-no-repeat transform hover:animate-wiggle"></div>
               </div>
 
@@ -86,7 +86,7 @@
                 </p>
               </div>
             </div>
-            <button class="show-event absolute bottom-3 left-1/2 animate-bounce lg:bottom-5">
+            <button class="show-event absolute bottom-3 left-47p animate-bounce lg:bottom-5">
               <svg
                 class="event-arrow transition duration-700 ease-in-out transform"
                 width="35"
@@ -103,8 +103,8 @@
             </button>
           </div>
         </div>
-        <div class="grid grid-cols-1 gap-16 md:ml-16 lg:ml-0">
-          <div style="height: 33vh" class="col-span-1">
+        <div class="grid lg:col-span-2 gap-16">
+          <div style="height: 33vh" class="lg:col-span-2">
             <div class="relative overflow-hidden">
               <div style="height: 33vh" class="eat w-full h-full transition duration-700 ease-in-out transform">
                 <div style="height: 33vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-red">
@@ -117,8 +117,8 @@
                   </p>
                 </div>
               </div>
-              <button class="show-eat font-text-medium text-lg absolute bottom-5 left-2/5">
-                <!-- <svg
+              <button class="show-eat font-text-medium text-lg absolute bottom-3 left-47p lg:bottom-5">
+                <svg
                   class="eat-arrow transition duration-700 ease-in-out transform"
                   width="35"
                   height="20"
@@ -130,11 +130,11 @@
                     d="M31.8487 22.7586C33.4823 24.4138 36.1411 24.4138 37.7747 22.7586C39.4084 21.1034 39.4084 18.4097 37.7747 16.7546L22.463 1.24138C20.8294 -0.413793 18.1706 -0.413793 16.537 1.24138L1.22526 16.7546C-0.408419 18.4097 -0.408419 21.1034 1.22526 22.7586C2.85893 24.4138 5.51766 24.4138 7.15134 22.7586L19.5 10.2475L31.8487 22.7586Z"
                     fill="black"
                   />
-                </svg> -->
-              Read More</button>
+                </svg>
+              </button>
             </div>
           </div>
-          <div style="height: 33vh" class="col-span-1">
+          <div style="height: 33vh" class="lg:col-span-2">
             <div class="relative overflow-hidden">
               <div style="height: 33vh" class="music w-full h-full transition duration-700 ease-in-out transform">
                 <div style="height: 33vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-blue-light">
@@ -147,7 +147,7 @@
                   </p>
                 </div>
               </div>
-              <button class="show-music absolute bottom-5 left-4/9 animate-bounce">
+              <button class="show-music absolute bottom-5 left-47p animate-bounce">
                 <svg
                   class="music-arrow transition duration-700 ease-in-out transform"
                   width="35"
@@ -168,99 +168,70 @@
       </section>
 
       <!-- Section 2 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-2 py-16 lg:gap-16 font-text-title">
+      <section class="grid grid-cols-1 lg:grid-cols-2 py-16 gap-16 font-text-title">
         <div
           style="height: 75vh; background-image: url(./img/mikkeller-blue.png)"
           class="bg-pastel-blue-light bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
-        ></div>
+        >
+      </div>
         <div
           style="height: 75vh; background-image: url(./img/mikkeller-pink.png)"
           class="bg-pastel-pink-beer bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
-        ></div>
+        >
+      </div>
       </section>
 
       <!-- Section 3 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-3 gap-16 pb-16 font-text-title">
-        <div class="grid grid-cols-1 gap-16 md:ml-16 lg:gap-14 lg:ml-0">
-          <div style="height: 75vh">
-            <div class="relative overflow-hidden">
-              <div style="height: 75vh" class="form w-full h-full transition duration-700 ease-in-out transform">
-                <div style="height: 75vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-pink">
-                  <h1 class="text-4xl">Sign up for event</h1>
-                  <form class="flex flex-col w-full text-lg tracking-widest px-8 py-4 lg:py-10">
-                    <label for="name">First Name</label>
-                    <input
-                      id="name"
-                      class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border"
-                      placeholder="Enter your first name here"
-                      required
-                    />
-                    <label for="last-name">Last Name</label>
-                    <input
-                      id="last-name"
-                      class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border"
-                      placeholder="Enter your last name here"
-                      required
-                    />
-                    <label for="email">Email</label>
-                    <input id="email" class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border" placeholder="Enter your email address here" required/>
-                  </form>
-                </div>
-                <div style="height: 75vh" class="h-full w-full flex justify-center items-center text-center flex-col bg-pastel-pink px-10 lg:px-4">
-                  <h1 class="text-4xl">Awesome!</h1>
-                  <h1 class="text-4xl">See you there!</h1>
-                </div>
-              </div>
-              <button
-              type="submit"
-              style="background-image: url(/src/img/button.svg)"
-              class="show-form absolute bottom-10 inset-x-20 text-white text-lg tracking-widest px-8 py-3 rounded-full mx-auto shadow-lg hover:animate-wiggle"
-              aria-label="Register to event"
-            >
-              Sign Up
-            </button>
-              </button>
-            </div>
-          </div>
-          <div style="height: 27.5vh">
-            <div class="relative overflow-hidden">
-              <div style="height: 27.5vh" class="about w-full h-full transition duration-700 ease-in-out transform">
-                <div style="height: 27.5vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-red">
-                  <h1 class="text-4xl">About Us</h1>
-                </div>
-                <div style="height: 27.5vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-red px-10 lg:px-6">
-                  <p class="font-text-regular tracking-wide">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi provident consequatur nam inventore ratione
-                  </p>
-                </div>
-              </div>
-              <button class="show-about absolute bottom-4 left-4/9 animate-bounce">
-                <svg
-                  class="about-arrow transition duration-700 ease-in-out transform"
-                  width="35"
-                  height="20"
-                  viewBox="0 0 39 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M31.8487 22.7586C33.4823 24.4138 36.1411 24.4138 37.7747 22.7586C39.4084 21.1034 39.4084 18.4097 37.7747 16.7546L22.463 1.24138C20.8294 -0.413793 18.1706 -0.413793 16.537 1.24138L1.22526 16.7546C-0.408419 18.4097 -0.408419 21.1034 1.22526 22.7586C2.85893 24.4138 5.51766 24.4138 7.15134 22.7586L19.5 10.2475L31.8487 22.7586Z"
-                    fill="black"
+      <section class="grid grid-cols-1 lg:grid-cols-5 pb-16 gap-16 font-text-title">
+        <div style="height: 75vh" class="lg:col-span-2">
+          <div class="relative overflow-hidden">
+            <div style="height: 75vh" class="form w-full h-full transition duration-700 ease-in-out transform">
+              <div style="height: 75vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-pink">
+                <h1 class="text-4xl">Sign up for event</h1>
+                <form class="flex flex-col w-full text-lg tracking-widest px-8 py-4 lg:py-10">
+                  <label for="name">First Name</label>
+                  <input
+                    id="name"
+                    class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border"
+                    placeholder="Enter your first name here"
+                    required
                   />
-                </svg>
-              </button>
+                  <label for="last-name">Last Name</label>
+                  <input
+                    id="last-name"
+                    class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border"
+                    placeholder="Enter your last name here"
+                    required
+                  />
+                  <label for="email">Email</label>
+                  <input id="email" class="bg-pastel-pink px-3 mb-3 text-center focus:bg-white focus:border-none form-border" placeholder="Enter your email address here" required/>
+                </form>
+              </div>
+              <div style="height: 75vh" class="h-full w-full flex justify-center items-center text-center flex-col bg-pastel-pink px-10 lg:px-4">
+                <h1 class="text-4xl">Awesome!</h1>
+                <h1 class="text-4xl">See you there!</h1>
+              </div>
             </div>
+            <button
+            type="submit"
+            style="background-image: url(/src/img/button.svg)"
+            class="show-form absolute bottom-10 inset-x-20 text-white text-lg tracking-widest px-8 py-3 rounded-full mx-auto shadow-lg hover:animate-wiggle"
+            aria-label="Register to event"
+          >
+            Sign Up
+          </button>
+            </button>
           </div>
         </div>
-        <div style="height: 75vh" class="md:col-span-2">
+        <div style="height: 75vh" class="lg:col-span-3">
           <div class="relative overflow-hidden">
             <div style="height: 75vh" class="gift h-full w-full transition duration-700 ease-in-out transform">
-              <div style="height: 75vh" class="h-full w-full flex justify-start text-center bg-pastel-green-dark">
-                <h1 class="text-4xl px-10 py-10 lg:px-40 lg:py-28">Bring your coaster invitation and receive a gift!</h1>
+              <div style="height: 75vh" class="h-full w-full flex justify-center text-center bg-pastel-green-dark">
+                <h1 class="text-4xl px-10 py-10 lg:px-20 lg:py-20">Bring your coaster invitation and receive a gift!</h1>
               </div>
-              <div style="height: 75vh" class="h-full w-full bg-mikkeller-glass bg-center bg-contain bg-no-repeat lg:bg-repeat">
+              <div style="height: 75vh" class="h-full w-full bg-mikkeller-glass bg-center bg-contain bg-repeatw">
               </div>
-              <button class="show-gift absolute top-1/2 left-1/3 lg:left-2/5 transform hover:animate-shake">
+              <button class="show-gift absolute top-1/2 left-2/5 transform hover:animate-shake">
                 <img src="img/gift.svg" alt="illustration of a wrapped gift">
               </button>
             </div>

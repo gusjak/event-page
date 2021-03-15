@@ -3,11 +3,10 @@ document.getElementById('nav-toggle').onclick = () => {
   document.getElementById('nav-content').classList.toggle('hidden');
 };
 
-// Document Title Animation
-// let i = 0;
-// setInterval(() => {
-//   document.title = i++ % 2 == 0 ? `Hey ${firstName}` : "Mikkeller's Launch Event 🍻";
-// }, 1500);
+// Capitalize first letter of name in Title
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 // Get query parameter values
 const url_string = window.location.href.toLowerCase();
@@ -16,14 +15,26 @@ const firstName = url.searchParams.get('name');
 const lastName = url.searchParams.get('lastname');
 const email = url.searchParams.get('email');
 
+let i = 0;
+
 if (firstName === null && lastName === null && email === null) {
   document.getElementById('name').value = '';
-  document.title = 'Welcome';
+
+  document.title = 'Welcome!';
+  setInterval(() => {
+    document.title = i++ % 2 == 0 ? 'Welcome!' : "Mikkeller's Launch Event 🍻";
+  }, 1500);
+
   document.getElementById('last-name').value = '';
   document.getElementById('email').value = '';
 } else {
   document.getElementById('name').value = firstName;
-  document.title = `Hey ${firstName}`;
+
+  document.title = 'Welcome!';
+  setInterval(() => {
+    document.title = i++ % 2 == 0 ? `Cheers ${capitalizeFirstLetter(firstName)}! 🍻` : "Mikkeller's Launch Event 🍻";
+  }, 1500);
+
   document.getElementById('last-name').value = lastName;
   document.getElementById('email').value = email;
 }
@@ -39,8 +50,6 @@ document.querySelector('.show-event').onclick = () => {
 // Eat Card
 document.querySelector('.show-eat').onclick = () => {
   document.querySelector('.eat').classList.toggle('-translate-y-full');
-  document.querySelector('.show-eat').classList.remove('font-text-medium');
-  document.querySelector('.show-eat').classList.add('font-text-title');
   document.querySelector('.eat-arrow').classList.toggle('rotate-180');
 };
 
@@ -54,12 +63,6 @@ document.querySelector('.show-music').onclick = () => {
 document.querySelector('.show-form').onclick = () => {
   document.querySelector('.form').classList.toggle('-translate-y-full');
   document.querySelector('.show-form').classList.toggle('hidden');
-};
-
-// About Us Card
-document.querySelector('.show-about').onclick = () => {
-  document.querySelector('.about').classList.toggle('-translate-y-full');
-  document.querySelector('.about-arrow').classList.toggle('rotate-180');
 };
 
 // Show Gift Card

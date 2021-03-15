@@ -4,23 +4,27 @@ document.getElementById('nav-toggle').onclick = () => {
 };
 
 // Document Title Animation
-let i = 0;
-setInterval(() => {
-  document.title = i++ % 2 == 0 ? 'Welcome to' : "Mikkeller's Launch Event 🍻";
-}, 1500);
+// let i = 0;
+// setInterval(() => {
+//   document.title = i++ % 2 == 0 ? `Hey ${firstName}` : "Mikkeller's Launch Event 🍻";
+// }, 1500);
 
 // Get query parameter values
 const url_string = window.location.href.toLowerCase();
 const url = new URL(url_string);
-const firstName = url.searchParams.get('firstname');
+const firstName = url.searchParams.get('name');
 const lastName = url.searchParams.get('lastname');
 const email = url.searchParams.get('email');
 
 if (firstName === null && lastName === null && email === null) {
   document.getElementById('name').value = '';
+  document.title = 'Welcome';
+  document.getElementById('last-name').value = '';
   document.getElementById('email').value = '';
 } else {
-  document.getElementById('name').value = firstName + ' ' + lastName;
+  document.getElementById('name').value = firstName;
+  document.title = `Hey ${firstName}`;
+  document.getElementById('last-name').value = lastName;
   document.getElementById('email').value = email;
 }
 
@@ -35,6 +39,8 @@ document.querySelector('.show-event').onclick = () => {
 // Eat Card
 document.querySelector('.show-eat').onclick = () => {
   document.querySelector('.eat').classList.toggle('-translate-y-full');
+  document.querySelector('.show-eat').classList.remove('font-text-medium');
+  document.querySelector('.show-eat').classList.add('font-text-title');
   document.querySelector('.eat-arrow').classList.toggle('rotate-180');
 };
 

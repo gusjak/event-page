@@ -68,6 +68,9 @@ module.exports = {
         '4/9': '45%',
         '2/5': '40%',
       },
+      screens: {
+        'hover-hover': { raw: '(hover: hover)' },
+      },
     },
   },
   variants: {

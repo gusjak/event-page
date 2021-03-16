@@ -31,7 +31,7 @@ module.exports = {
       backgroundImage: {
         'henry-sally-dance': "url('../img/sally-henry-dance.svg')",
         'event-gift': "url('../img/event-gift.svg')",
-        'mikkeller-glass': 'url(../img/mikkeller-beerglass.png)',
+        'mikkeller-glass': 'url(../img/mikkeller-beerglass.webp)',
       },
       keyframes: {
         wiggle: {

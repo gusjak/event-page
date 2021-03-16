@@ -52,7 +52,7 @@ Accompanying this will be a large event with food, live acts and of course, our 
 
         <!-- Hamburger Menu -->
         <div class="block lg:hidden">
-          <button id="nav-toggle" class="flex items-center py-3">
+          <button id="nav-toggle" class="flex items-center py-3" aria-label="button to toggle navigation links in mobile">
             <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M3.71852 15.9777C4.98852 15.6477 11.2686 15.7577 12.5686 15.8877C23.2286 16.9677 24.4285 15.3977 32.7885 16.3477C38.1685 16.9577 35.4386 20.3377 34.0786 20.8977C32.7186 21.4577 29.5285 21.3477 28.0585 21.2577C20.2985 20.7977 13.3886 22.1477 4.74852 21.2277C3.62852 21.1077 2.44852 21.1877 1.46852 20.6377C0.628519 20.1677 -0.341487 18.8077 0.118513 17.7977C0.628513 16.6777 2.66852 16.2577 3.71852 15.9777Z"
@@ -136,7 +136,10 @@ Accompanying this will be a large event with food, live acts and of course, our 
                 </p>
               </div>
             </div>
-            <button class="show-event absolute bottom-0 left-47p animate-bounce transition duration-1000 ease-in-out transform">
+            <button
+              class="show-event absolute bottom-0 left-47p animate-bounce transition duration-1000 ease-in-out transform"
+              aria-label="button to show more even information"
+            >
               <svg
                 class="event-arrow transition duration-700 ease-in-out transform"
                 width="40"
@@ -168,7 +171,7 @@ Accompanying this will be a large event with food, live acts and of course, our 
                   </p>
                 </div>
               </div>
-              <button class="show-eat absolute bottom-0 left-47p animate-bounce">
+              <button class="show-eat absolute bottom-0 left-47p animate-bounce" aria-label="button to show more food related information">
                 <svg
                   class="eat-arrow transition duration-700 ease-in-out transform"
                   width="40"
@@ -199,7 +202,7 @@ Accompanying this will be a large event with food, live acts and of course, our 
                   </p>
                 </div>
               </div>
-              <button class="show-music absolute bottom-0 left-47p animate-bounce">
+              <button class="show-music absolute bottom-0 left-47p animate-bounce" aria-label="button to show more information about live acts at event">
                 <svg
                   class="music-arrow transition duration-700 ease-in-out transform"
                   width="40"
@@ -223,11 +226,11 @@ Accompanying this will be a large event with food, live acts and of course, our 
       <!-- Section 2 Grid Wrapper -->
       <section class="grid grid-cols-1 lg:grid-cols-2 py-16 gap-16 font-text-title">
         <div
-          style="height: 80vh; background-image: url(./img/mikkeller-blue.png)"
+          style="height: 80vh; background-image: url(./img/mikkeller-blue.webp)"
           class="bg-pastel-blue-light bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
         ></div>
         <div
-          style="height: 80vh; background-image: url(./img/mikkeller-pink.png)"
+          style="height: 80vh; background-image: url(./img/mikkeller-pink.webp)"
           class="bg-pastel-pink-beer bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
         ></div>
       </section>
@@ -269,7 +272,9 @@ Accompanying this will be a large event with food, live acts and of course, our 
               </div>
             </div>
             <button
+              type="submit"
               class="show-form absolute text-pastel-pink-beer bottom-7 left-24 md:left-2/5 lg:left-30p lg:bottom-10 hover:text-pastel-pink hover:animate-wiggle"
+              aria-label="form button to comfirm your registration the the event"
             >
               <svg
                 class="fill-current text-primary-green hover:text-pastel-green-light"
@@ -297,7 +302,7 @@ Accompanying this will be a large event with food, live acts and of course, our 
                 <h1 class="text-4xl lg:text-6xl px-10 py-10 lg:px-20 lg:py-20">Bring your coaster invitation and receive a gift!</h1>
               </div>
               <div style="height: 80vh" class="h-full w-full bg-mikkeller-glass bg-center bg-cover">
-                <button class="back absolute -bottom-24 left-47p animate-bounce">
+                <button class="back absolute -bottom-24 left-47p animate-bounce" aria-label="button to go back from gift to previous text">
                   <svg class="back-arrow" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M12.8499 25.4832L19.3166 19.0166L25.7833 25.4832C25.9376 25.6375 26.1208 25.7599 26.3224 25.8435C26.524 25.927 26.74 25.9699 26.9583 25.9699C27.1765 25.9699 27.3926 25.927 27.5942 25.8435C27.7958 25.7599 27.979 25.6375 28.1333 25.4832C28.2876 25.3289 28.41 25.1458 28.4935 24.9441C28.577 24.7425 28.62 24.5265 28.62 24.3082C28.62 24.09 28.577 23.8739 28.4935 23.6723C28.41 23.4707 28.2876 23.2875 28.1333 23.1332L20.4833 15.4833C20.3291 15.3288 20.1459 15.2062 19.9443 15.1225C19.7427 15.0389 19.5265 14.9958 19.3083 14.9958C19.09 14.9958 18.8738 15.0389 18.6722 15.1225C18.4706 15.2062 18.2875 15.3288 18.1333 15.4833L10.4833 23.1332C10.3288 23.2874 10.2062 23.4706 10.1225 23.6722C10.0389 23.8738 9.99585 24.09 9.99585 24.3082C9.99585 24.5265 10.0389 24.7427 10.1225 24.9443C10.2062 25.1459 10.3288 25.3291 10.4833 25.4832C11.1333 26.1166 12.1999 26.1332 12.8499 25.4832V25.4832Z"
@@ -307,7 +312,10 @@ Accompanying this will be a large event with food, live acts and of course, our 
                   Back
                 </button>
               </div>
-              <button class="show-gift absolute top-1/2 left-1/3 md:left-2/5 lg:left-2/5 transform animate-shake">
+              <button
+                class="show-gift absolute top-1/2 left-1/3 md:left-2/5 lg:left-2/5 transform animate-shake"
+                aria-label="button to show gift for bringing your invitation"
+              >
                 <img src="img/gift.svg" alt="illustration of a wrapped gift" loading="lazy" />
               </button>
             </div>

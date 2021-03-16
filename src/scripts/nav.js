@@ -44,7 +44,7 @@ window.onscroll = () => {
 };
 
 function scrollFunction() {
-  if (window.innerWidth > 640) {
+  if (window.innerWidth > 414) {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       document.getElementById('navbar').classList.remove('lg:h-36');
       document.getElementById('navbar').classList.add('lg:h-20');

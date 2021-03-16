@@ -59,13 +59,13 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 1.5s ease-in-out infinite',
-        fadeIn: 'fadeIn 3s ease-in forwards',
+        fadeIn: 'fadeIn 1s ease-in forwards',
         jump: 'jump 2s ease-in-out infinite',
         shake: 'shake 2s infinite',
       },
       inset: {
         '30p': '30%',
-        '47p': '47%',
+        '46p': '46%',
         '4/9': '45%',
         '2/5': '40%',
       },

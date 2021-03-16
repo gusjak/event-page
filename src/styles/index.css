@@ -30,6 +30,100 @@ html {
   border-image-slice: 15 15;
 }
 
+/* Custom in animation for site (Will add to tailwind.config.js later */
+@media screen and (min-width: 640px) {
+  nav .logo {
+    animation-name: nav-logo-load;
+    animation-duration: 500ms;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-500%);
+  }
+
+  nav li {
+    animation-name: nav-li-load;
+    animation-duration: 800ms;
+    animation-delay: 800ms;
+    animation-fill-mode: forwards;
+    transform: translateX(1000%);
+  }
+
+  nav li:nth-child(2) {
+    animation-delay: 850ms;
+  }
+
+  nav li:nth-child(3) {
+    animation-delay: 900ms;
+  }
+
+  nav li:nth-child(4) {
+    animation-delay: 950ms;
+  }
+
+  #first {
+    animation-name: event-box-load;
+    animation-duration: 900ms;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(-500%);
+  }
+
+  #second {
+    animation-name: eat-box-load;
+    animation-duration: 950ms;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(500%);
+  }
+
+  #third {
+    animation-name: eat-box-load;
+    animation-duration: 950ms;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(500%);
+  }
+
+  @keyframes nav-logo-load {
+    0% {
+      transform: translateY(-500%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes nav-li-load {
+    0% {
+      transform: translateX(1000%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes event-box-load {
+    0% {
+      transform: translateX(-500%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes eat-box-load {
+    0% {
+      transform: translateX(500%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
 /* TAILWIND MAGIC */
 @tailwind base;
 @tailwind components;

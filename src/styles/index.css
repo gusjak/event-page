@@ -20,6 +20,10 @@
 }
 
 /* CUSTOM CSS */
+html {
+  scroll-behavior: smooth;
+}
+
 .form-border {
   border: 15px solid;
   border-image-source: url(/src/img/border.svg);

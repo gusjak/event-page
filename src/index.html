@@ -39,9 +39,12 @@ Accompanying this will be a large event with food, live acts and of course, our 
   </head>
 
   <body class="bg-light-gray">
-    <main class="px-2 md:px-16 lg:px-36 flex flex-col h-screen justify-between">
-      <nav class="flex items-center justify-between flex-wrap bg-light-gray z-10 top-0 py-8 font-text-title">
-        <div class="flex items-center flex-shrink-0 mr-6">
+    <main class="px-2 md:px-16 lg:px-36 pt-28 lg:pt-40">
+      <nav
+        id="navbar"
+        class="fixed inset-x-2 md:inset-x-16 lg:inset-x-36 flex items-center justify-between bg-light-gray z-10 top-0 font-text-title transition-height duration-500 ease h-24 lg:h-36"
+      >
+        <div class="">
           <a class="" href="#">
             <img src="./img/logo.svg" width="180" alt="Mikkeller text logo" />
           </a>
@@ -74,40 +77,32 @@ Accompanying this will be a large event with food, live acts and of course, our 
         >
           <ul class="list-reset lg:flex justify-end flex-1 items-center text-3xl">
             <li class="mr-6">
-              <svg class="absolute" width="100" height="20" viewBox="0 0 48 20">
-                <path
-                  id="Path_14"
-                  data-name="Path 14"
-                  d="M280.605,19.768s-13.525.52-13.525-6.112,5.072-5.982,6.763-5.462,3.251,4.032,5.072,4.032S282.556,0,298.032,0,311.2,11.466,312.6,11.574c3.381.26,2.63-.563,5.982-2.991,3.771-2.731,7.933,1.3,7.283,4.032-.278,1.17-1.17,7.153-12.875,7.153Z"
-                  transform="translate(-245)"
-                ></path>
-              </svg>
-              <a class="inline-block text-primary-green hover:text-softer-black py-4 px-4" href="#">Sign Up</a>
+              <a class="inline-block text-primary-green hover:text-softer-black py-4 px-4" href="#sign-up">Sign Up</a>
             </li>
             <li class="mr-6">
-              <a class="inline-block text-primary-green hover:text-softer-black py-4 px-4" href="#">Event</a>
+              <a class="inline-block text-primary-green hover:text-softer-black py-4 px-4" href="#event">Event</a>
             </li>
             <li class="mr-6">
-              <a class="inline-block text-primary-green hover:text-softer-black py-4 px-4" href="#">About</a>
+              <a class="inline-block text-primary-green hover:text-softer-black py-4 px-4" href="https://mikkeller.com/brewery">About</a>
             </li>
             <li>
-              <a class="inline-block text-primary-green hover:text-softer-black py-4" href="#">Contact</a>
+              <a class="inline-block text-primary-green hover:text-softer-black py-4" href="#footer">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
 
       <!-- Section 1 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-5 gap-16 font-text-title">
-        <div style="height: 75vh" class="lg:col-span-3">
+      <section id="event" class="grid grid-cols-1 lg:grid-cols-5 gap-16 font-text-title">
+        <div style="height: 80vh" class="lg:col-span-3">
           <div class="relative overflow-hidden">
-            <div style="height: 75vh" class="event h-full w-full transition duration-1000 ease-in-out transform">
-              <div style="height: 75vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-yellow">
-                <h1 class="text-4xl md:text-6xl mt-8">Event</h1>
-                <div style="height: 75vh" class="bg-henry-sally-dance bg-center bg-no-repeat hover:animate-wiggle"></div>
+            <div style="height: 80vh" class="event h-full w-full transition duration-1000 ease-in-out transform">
+              <div style="height: 80vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-yellow">
+                <h1 class="text-4xl md:text-6xl mt-14">Event</h1>
+                <div style="height: 80vh" class="bg-henry-sally-dance bg-center bg-no-repeat hover:animate-wiggle"></div>
               </div>
 
-              <div style="height: 75vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-yellow px-4 lg:px-10">
+              <div style="height: 80vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-yellow px-4 lg:px-10">
                 <p class="font-text-regular text-sm lg:text-base tracking-wider py-2 lg:py-10">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi provident consequatur nam inventore ratione sed ipsa id
                   numquam aliquam. Accusantium fuga laborum sapiente dolores neque necessitatibus eligendi, dignissimos voluptates distinctio eos laboriosam
@@ -136,13 +131,13 @@ Accompanying this will be a large event with food, live acts and of course, our 
           </div>
         </div>
         <div class="grid lg:col-span-2 gap-16">
-          <div style="height: 33.5vh" class="lg:col-span-2">
+          <div style="height: 36vh" class="lg:col-span-2">
             <div class="relative overflow-hidden">
-              <div style="height: 33.5vh" class="eat w-full h-full transition duration-1000 ease-in-out transform">
-                <div style="height: 33.5vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-red">
+              <div style="height: 36vh" class="eat w-full h-full transition duration-1000 ease-in-out transform">
+                <div style="height: 36vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-red">
                   <h1 class="text-4xl lg:text-6xl">Eat</h1>
                 </div>
-                <div style="height: 33.5vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-red px-10 lg:px-4">
+                <div style="height: 36vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-red px-10 lg:px-4">
                   <p class="font-text-regular text-sm lg:text-base tracking-wider py-1 lg:py-4">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi provident consequatur nam inventore ratione sed ipsa id
                     numquam aliquam. Accusantium eligendi provident consequatur
@@ -166,13 +161,13 @@ Accompanying this will be a large event with food, live acts and of course, our 
               </button>
             </div>
           </div>
-          <div style="height: 33vh" class="lg:col-span-2">
+          <div style="height: 35vh" class="lg:col-span-2">
             <div class="relative overflow-hidden">
-              <div style="height: 33vh" class="music w-full h-full transition duration-1000 ease-in-out transform">
-                <div style="height: 33vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-blue-light">
+              <div style="height: 35vh" class="music w-full h-full transition duration-1000 ease-in-out transform">
+                <div style="height: 35vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-blue-light">
                   <h1 class="text-4xl lg:text-6xl">Music</h1>
                 </div>
-                <div style="height: 33vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-blue-light px-10 lg:px-4">
+                <div style="height: 35vh" class="h-full w-full flex justify-center items-center text-center bg-pastel-blue-light px-10 lg:px-4">
                   <p class="font-text-regular text-sm lg:text-base tracking-wider py-1 lg:py-4">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi provident consequatur nam inventore ratione sed ipsa id
                     numquam aliquam. Accusantium fuga laborum
@@ -202,21 +197,21 @@ Accompanying this will be a large event with food, live acts and of course, our 
       <!-- Section 2 Grid Wrapper -->
       <section class="grid grid-cols-1 lg:grid-cols-2 py-16 gap-16 font-text-title">
         <div
-          style="height: 75vh; background-image: url(./img/mikkeller-blue.png)"
+          style="height: 80vh; background-image: url(./img/mikkeller-blue.png)"
           class="bg-pastel-blue-light bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
         ></div>
         <div
-          style="height: 75vh; background-image: url(./img/mikkeller-pink.png)"
+          style="height: 80vh; background-image: url(./img/mikkeller-pink.png)"
           class="bg-pastel-pink-beer bg-center bg-contain bg-no-repeat flex justify-center items-center flex-col text-center"
         ></div>
       </section>
 
       <!-- Section 3 Grid Wrapper -->
-      <section class="grid grid-cols-1 lg:grid-cols-5 pb-16 gap-16 font-text-title">
-        <div style="height: 75vh" class="lg:col-span-2">
+      <section id="sign-up" class="grid grid-cols-1 lg:grid-cols-5 pb-16 gap-16 font-text-title">
+        <div style="height: 80vh" class="lg:col-span-2">
           <div class="relative overflow-hidden">
-            <div style="height: 75vh" class="form w-full h-full transition duration-1000 ease-in-out transform">
-              <div style="height: 75vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-pink">
+            <div style="height: 80vh" class="form w-full h-full transition duration-1000 ease-in-out transform">
+              <div style="height: 80vh" class="h-full w-full flex justify-center flex-col text-center bg-pastel-pink">
                 <h1 class="text-4xl">Sign up for the event</h1>
                 <form class="flex flex-col w-full tracking-widest px-8 py-2 md:px-16 lg:px-6 lg:py-6">
                   <label class="text-xl" for="name">First Name</label>
@@ -242,7 +237,7 @@ Accompanying this will be a large event with food, live acts and of course, our 
                   />
                 </form>
               </div>
-              <div style="height: 75vh" class="h-full w-full flex justify-center items-center text-center flex-col bg-pastel-pink px-10 lg:px-4">
+              <div style="height: 80vh" class="h-full w-full flex justify-center items-center text-center flex-col bg-pastel-pink px-10 lg:px-4">
                 <h1 class="text-6xl">Awesome!</h1>
                 <h1 class="text-6xl">See you there!</h1>
               </div>
@@ -251,7 +246,7 @@ Accompanying this will be a large event with food, live acts and of course, our 
               class="show-form absolute text-pastel-pink-beer bottom-7 left-24 md:left-2/5 lg:left-30p lg:bottom-10 hover:text-pastel-pink hover:animate-wiggle"
             >
               <svg
-                class="fill-current text-primary-green hover:text-pastel-green-dark"
+                class="fill-current text-primary-green hover:text-pastel-green-light"
                 width="170"
                 height="56"
                 viewBox="0 0 170 56"
@@ -269,13 +264,13 @@ Accompanying this will be a large event with food, live acts and of course, our 
             </button>
           </div>
         </div>
-        <div style="height: 75vh" class="lg:col-span-3">
+        <div style="height: 80vh" class="lg:col-span-3">
           <div class="relative overflow-hidden">
-            <div style="height: 75vh" class="gift h-full w-full transition duration-1000 ease-in-out transform">
-              <div style="height: 75vh" class="h-full w-full flex justify-center text-center bg-pastel-green-dark">
+            <div style="height: 80vh" class="gift h-full w-full transition duration-1000 ease-in-out transform">
+              <div style="height: 80vh" class="h-full w-full flex justify-center text-center bg-pastel-green-dark">
                 <h1 class="text-4xl lg:text-6xl px-10 py-10 lg:px-20 lg:py-20">Bring your coaster invitation and receive a gift!</h1>
               </div>
-              <div style="height: 75vh" class="h-full w-full bg-mikkeller-glass bg-center bg-cover"></div>
+              <div style="height: 80vh" class="h-full w-full bg-mikkeller-glass bg-center bg-cover"></div>
               <button class="show-gift absolute top-1/2 left-1/3 md:left-2/5 lg:left-2/5 transform animate-shake">
                 <img src="img/gift.svg" alt="illustration of a wrapped gift" loading="lazy" />
               </button>
@@ -285,7 +280,7 @@ Accompanying this will be a large event with food, live acts and of course, our 
       </section>
 
       <!-- Footer Section -->
-      <footer class="footer bg-pastel-green-light text-primary-green relative pt-1">
+      <footer id="footer" class="footer bg-pastel-green-light text-primary-green relative pt-1">
         <div class="container mx-auto px-6">
           <div class="sm:flex sm:mt-8">
             <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
@@ -322,6 +317,8 @@ Accompanying this will be a large event with food, live acts and of course, our 
         </div>
       </footer>
     </main>
+    <script src="./scripts/cards.js"></script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/nav.js"></script>
   </body>
 </html>

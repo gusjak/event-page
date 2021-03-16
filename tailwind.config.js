@@ -17,6 +17,7 @@ module.exports = {
         'pastel-green-dark': '#70AE8C',
         'pastel-green-light': '#EEFBEF',
       },
+      textColor: ['active, focus, hover'],
       fontFamily: {
         'text-title': 'Mikkelwind',
         'text-regular': 'RalewayRegular',
@@ -70,6 +71,9 @@ module.exports = {
       },
       screens: {
         'hover-hover': { raw: '(hover: hover)' },
+      },
+      transitionProperty: {
+        height: 'height',
       },
     },
   },

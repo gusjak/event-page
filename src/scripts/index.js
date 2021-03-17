@@ -24,13 +24,13 @@ if (firstName === null && lastName === null && email === null) {
   document.getElementById('last-name').value = '';
   document.getElementById('email').value = '';
 } else {
-  document.getElementById('name').value = firstName;
+  document.getElementById('name').value = capitalizeFirstLetter(firstName);
 
   document.title = 'Mikkeller Launch Event';
   setInterval(() => {
     document.title = i++ % 2 == 0 ? `Cheers ${capitalizeFirstLetter(firstName)}! 🍻` : 'Mikkeller Launch Event';
   }, 2000);
 
-  document.getElementById('last-name').value = lastName;
+  document.getElementById('last-name').value = capitalizeFirstLetter(lastName);
   document.getElementById('email').value = email;
 }

@@ -4,7 +4,7 @@
 const eventButton = document.querySelector('.show-event');
 const eventButtonText = document.querySelector('.event-button-text');
 eventButton.onclick = () => {
-  eventButton.classList.toggle('-bottom-2');
+  eventButton.classList.toggle('-bottom-1');
   eventButtonText.classList.toggle('-translate-y-12');
   if (eventButtonText.textContent == 'Show Less') {
     eventButtonText.textContent = 'Show More';
@@ -19,8 +19,8 @@ eventButton.onclick = () => {
 const eatButton = document.querySelector('.show-eat');
 const eatButtonText = document.querySelector('.eat-button-text');
 eatButton.onclick = () => {
-  eatButton.classList.toggle('-bottom-4');
-  eatButtonText.classList.toggle('-translate-y-8');
+  eatButton.classList.toggle('-bottom-1');
+  eatButtonText.classList.toggle('-translate-y-12');
   if (eatButtonText.textContent == 'Show Less') {
     eatButtonText.textContent = 'Show More';
   } else {
@@ -34,8 +34,8 @@ eatButton.onclick = () => {
 const musicButton = document.querySelector('.show-music');
 const musicButtonText = document.querySelector('.music-button-text');
 musicButton.onclick = () => {
-  musicButton.classList.toggle('-bottom-4');
-  musicButtonText.classList.toggle('-translate-y-8');
+  musicButton.classList.toggle('-bottom-1');
+  musicButtonText.classList.toggle('-translate-y-12');
   if (musicButtonText.textContent == 'Show Less') {
     musicButtonText.textContent = 'Show More';
   } else {
@@ -46,11 +46,12 @@ musicButton.onclick = () => {
 };
 
 // Show Sign Up Comfirmation
-const formButton = document.querySelector('.show-form');
-formButton.onclick = () => {
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
   document.querySelector('.form').classList.toggle('-translate-y-full');
   document.querySelector('.show-form').classList.toggle('hidden');
-};
+});
 
 // Show/Hide Gift Card Information Front
 const giftButton = document.querySelector('.show-gift');

@@ -31,11 +31,11 @@ html {
 }
 
 /* Custom in animation for site (Will add to tailwind.config.js later */
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
   nav .logo {
     animation-name: nav-logo-load;
     animation-duration: 500ms;
-    animation-delay: 500ms;
+    animation-delay: 600ms;
     animation-fill-mode: forwards;
     transform: translateY(-500%);
   }

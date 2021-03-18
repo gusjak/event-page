@@ -43,9 +43,16 @@ Simply visit [Mikkeller Event Website](https://ipwu-event.netlify.app/) for a li
 
 ## Code Review
 
-By [Dante Mogrin](https://github.com/mogrim-91)
+By [Dante Mogrim](https://github.com/mogrim-91)
 
-Insert code review comment here 👋
+- [ ] 1. **package.json:** Installing Prettier (or some other formatter/linter) through npm could be a good idea for future projects that may or may not be collaborations/open for contributions.
+- [ ] 2. **index.html L49+L407:** Lazy loading consistency missing on two img tags.
+- [ ] 3. **index.js L21:** Not a huge fan och the tab title toggle. Becomes a bit distracting for the eyes when having other tabs open at the same time. Cool idea though!
+- [ ] 4. **index.html L457:** I feel like these would be clearer if they were filled with dummy data example values rather than a description of what type of information goes there.
+- [ ] 5. **/img:** Your three .webp images might risk you running into some [browser coverage issues](https://caniuse.com/?search=webp). You can for example convert them into .png's and you'll be fine! :sunglasses:
+
+> You really knocked it out of the park! I am sincerely blown away! <br>
+> It was a toughie even finding anything to remark upon, haha. Job well done! :100: :tada:
 
 ## Creators
 

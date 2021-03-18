@@ -56,13 +56,11 @@ form.addEventListener('submit', (e) => {
 // Show/Hide Gift Card Information Front
 const giftButton = document.querySelector('.show-gift');
 giftButton.addEventListener('click', () => {
-  giftButton.classList.toggle('hidden');
   document.querySelector('.gift').classList.toggle('-translate-y-full');
 });
 
 // Show/Hide Gift Card Information Back
 const giftBackButton = document.querySelector('.back');
 giftBackButton.addEventListener('click', () => {
-  giftButton.classList.toggle('hidden');
   document.querySelector('.gift').classList.toggle('-translate-y-full');
 });

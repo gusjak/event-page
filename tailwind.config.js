@@ -29,7 +29,6 @@ module.exports = {
         // => @media (min-width: 1100px) { ... }
       },
       backgroundImage: {
-        'henry-sally-dance': "url('../img/sally-henry-dance.svg')",
         'event-gift': "url('../img/event-gift.svg')",
         'mikkeller-glass': 'url(../img/mikkeller-beerglass.webp)',
       },
@@ -38,18 +37,13 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-2deg)' },
           '50%': { transform: 'rotate(2deg)' },
         },
+        wiggleHard: {
+          '0%, 100%': { transform: 'rotate(-4deg)' },
+          '50%': { transform: 'rotate(4deg)' },
+        },
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
-        },
-        jump: {
-          '0%': { transform: 'scale(0, 0) translateY(-140%)' },
-          '10%': { transform: 'scale(0, 0) translateY(-140%)' },
-          '30%': { transform: 'scale(.9, 1.1) translateY(-160%)' },
-          '50%': { transform: 'scale(1.05, .1) translateY(-120%)' },
-          '57%': { transform: 'scale(1, 1) translateY(-115%)' },
-          '64%': { transform: 'scale(1, 1) translateY(-105%)' },
-          '100%': { transform: 'scale(1, 1)  translateY(-100%)' },
         },
         shake: {
           '0%': { transform: 'none' },
@@ -63,8 +57,8 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 1.5s ease-in-out infinite',
+        wiggleHard: 'wiggleHard 1s ease-in-out infinite',
         fadeIn: 'fadeIn 1s ease-in forwards',
-        jump: 'jump 2s ease forwards',
         shake: 'shake 2s infinite',
       },
       inset: {

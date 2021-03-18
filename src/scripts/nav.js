@@ -10,26 +10,26 @@ const eventLink = document.querySelector('.event');
 const aboutLink = document.querySelector('.about');
 const contactLink = document.querySelector('.contact');
 
-signupLink.onclick = () => {
+signupLink.addEventListener('click', () => {
   document.querySelector('.hat1').classList.remove('hidden');
   document.querySelector('.hat2').classList.add('hidden');
   document.querySelector('.hat3').classList.add('hidden');
   document.querySelector('.hat4').classList.add('hidden');
-};
+});
 
-eventLink.onclick = () => {
+eventLink.addEventListener('click', () => {
   document.querySelector('.hat2').classList.remove('hidden');
   document.querySelector('.hat1').classList.add('hidden');
   document.querySelector('.hat3').classList.add('hidden');
   document.querySelector('.hat4').classList.add('hidden');
-};
+});
 
-aboutLink.onclick = () => {
+aboutLink.addEventListener('click', () => {
   document.querySelector('.hat3').classList.toggle('hidden');
   document.querySelector('.hat1').classList.add('hidden');
   document.querySelector('.hat2').classList.add('hidden');
   document.querySelector('.hat4').classList.add('hidden');
-};
+});
 
 contactLink.onclick = () => {
   document.querySelector('.hat4').classList.toggle('hidden');

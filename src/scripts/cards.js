@@ -3,8 +3,8 @@
 // Show/Hide Event Card Information
 const eventButton = document.querySelector('.show-event');
 const eventButtonText = document.querySelector('.event-button-text');
-eventButton.onclick = () => {
-  eventButton.classList.toggle('-bottom-1');
+eventButton.addEventListener('click', () => {
+  eventButton.classList.toggle('-bottom-2');
   eventButtonText.classList.toggle('-translate-y-8');
   if (eventButtonText.textContent == 'Show Less') {
     eventButtonText.textContent = 'Show More';
@@ -13,13 +13,13 @@ eventButton.onclick = () => {
   }
   document.querySelector('.event-card').classList.toggle('-translate-y-full');
   document.querySelector('.event-arrow').classList.toggle('rotate-180');
-};
+});
 
 // Show/Hide Eat Card Information
 const eatButton = document.querySelector('.show-eat');
 const eatButtonText = document.querySelector('.eat-button-text');
-eatButton.onclick = () => {
-  eatButton.classList.toggle('-bottom-1');
+eatButton.addEventListener('click', () => {
+  eatButton.classList.toggle('-bottom-2');
   eatButtonText.classList.toggle('-translate-y-8');
   if (eatButtonText.textContent == 'Show Less') {
     eatButtonText.textContent = 'Show More';
@@ -28,13 +28,13 @@ eatButton.onclick = () => {
   }
   document.querySelector('.eat').classList.toggle('-translate-y-full');
   document.querySelector('.eat-arrow').classList.toggle('rotate-180');
-};
+});
 
 // Show/Hide Music Card Information
 const musicButton = document.querySelector('.show-music');
 const musicButtonText = document.querySelector('.music-button-text');
-musicButton.onclick = () => {
-  musicButton.classList.toggle('-bottom-1');
+musicButton.addEventListener('click', () => {
+  musicButton.classList.toggle('-bottom-2');
   musicButtonText.classList.toggle('-translate-y-8');
   if (musicButtonText.textContent == 'Show Less') {
     musicButtonText.textContent = 'Show More';
@@ -43,7 +43,7 @@ musicButton.onclick = () => {
   }
   document.querySelector('.music').classList.toggle('-translate-y-full');
   document.querySelector('.music-arrow').classList.toggle('rotate-180');
-};
+});
 
 // Show Sign Up Comfirmation
 const form = document.getElementById('form');
@@ -55,12 +55,14 @@ form.addEventListener('submit', (e) => {
 
 // Show/Hide Gift Card Information Front
 const giftButton = document.querySelector('.show-gift');
-giftButton.onclick = () => {
+giftButton.addEventListener('click', () => {
+  giftButton.classList.toggle('hidden');
   document.querySelector('.gift').classList.toggle('-translate-y-full');
-};
+});
 
 // Show/Hide Gift Card Information Back
 const giftBackButton = document.querySelector('.back');
-giftBackButton.onclick = () => {
-  document.querySelector('.gift').classList.remove('-translate-y-full');
-};
+giftBackButton.addEventListener('click', () => {
+  giftButton.classList.toggle('hidden');
+  document.querySelector('.gift').classList.toggle('-translate-y-full');
+});

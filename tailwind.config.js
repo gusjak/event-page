@@ -43,9 +43,13 @@ module.exports = {
           '100%': { opacity: '1' },
         },
         jump: {
-          '0%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-50px)' },
-          '100%': { transform: 'translateY(0)' },
+          '0%': { transform: 'scale(0, 0) translateY(-140%)' },
+          '10%': { transform: 'scale(0, 0) translateY(-140%)' },
+          '30%': { transform: 'scale(.9, 1.1) translateY(-160%)' },
+          '50%': { transform: 'scale(1.05, .1) translateY(-120%)' },
+          '57%': { transform: 'scale(1, 1) translateY(-115%)' },
+          '64%': { transform: 'scale(1, 1) translateY(-105%)' },
+          '100%': { transform: 'scale(1, 1)  translateY(-100%)' },
         },
         shake: {
           '0%': { transform: 'none' },
@@ -60,13 +64,15 @@ module.exports = {
       animation: {
         wiggle: 'wiggle 1.5s ease-in-out infinite',
         fadeIn: 'fadeIn 1s ease-in forwards',
-        jump: 'jump 2s ease-in-out infinite',
+        jump: 'jump 2s ease forwards',
         shake: 'shake 2s infinite',
       },
       inset: {
         '30p': '30%',
         '35p': '35%',
+        '42p': '42%',
         '47p': '47%',
+        '48p': '48%',
         '4/9': '45%',
         '2/5': '40%',
       },

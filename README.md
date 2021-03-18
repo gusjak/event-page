@@ -10,8 +10,6 @@ We get to choose ourselves for a real company or organisation and create either 
 
 We have decided to go with the microbrewery company Mikkeller and create a beer launching event.
 
-[Mikkeller Event Website](https://ipwu-event.netlify.app/)
-
 <details><summary><strong>Project requirements:</strong></b></summary>
 
 - A unique <strong><ins>landing page</ins></strong> that follows the same graphic manner of the chosen company.
@@ -26,6 +24,22 @@ We have decided to go with the microbrewery company Mikkeller and create a beer 
 - Each group must submit a review of another group the day before the presentation. Code reviews must be submitted with a pull request.
 
 </details>
+
+## Installation
+
+*Option 1*
+
+Simply visit [Mikkeller Event Website](https://ipwu-event.netlify.app/) for a live preview.
+
+<br>
+
+*Option 2*
+
+1. Clone this repository through the terminal: `git clone https://github.com/gusjak/event-page.git`.
+2. Change your current directory to the repository: `cd event-page/`.
+3. Install dependencies with `npm install` and when they are finished type `npm start` in your terminal.
+4. The website will automatically build to your localhost, type `http://localhost:1234/` in your browser.
+
 
 ## Code Review
 

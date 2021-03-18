@@ -5,7 +5,7 @@ const eventButton = document.querySelector('.show-event');
 const eventButtonText = document.querySelector('.event-button-text');
 eventButton.onclick = () => {
   eventButton.classList.toggle('-bottom-1');
-  eventButtonText.classList.toggle('-translate-y-12');
+  eventButtonText.classList.toggle('-translate-y-8');
   if (eventButtonText.textContent == 'Show Less') {
     eventButtonText.textContent = 'Show More';
   } else {
@@ -20,7 +20,7 @@ const eatButton = document.querySelector('.show-eat');
 const eatButtonText = document.querySelector('.eat-button-text');
 eatButton.onclick = () => {
   eatButton.classList.toggle('-bottom-1');
-  eatButtonText.classList.toggle('-translate-y-12');
+  eatButtonText.classList.toggle('-translate-y-8');
   if (eatButtonText.textContent == 'Show Less') {
     eatButtonText.textContent = 'Show More';
   } else {
@@ -35,7 +35,7 @@ const musicButton = document.querySelector('.show-music');
 const musicButtonText = document.querySelector('.music-button-text');
 musicButton.onclick = () => {
   musicButton.classList.toggle('-bottom-1');
-  musicButtonText.classList.toggle('-translate-y-12');
+  musicButtonText.classList.toggle('-translate-y-8');
   if (musicButtonText.textContent == 'Show Less') {
     musicButtonText.textContent = 'Show More';
   } else {
